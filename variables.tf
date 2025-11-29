@@ -9,8 +9,8 @@ variable "pm_user" {
 }
 
 variable "pm_password" {
-  type        = string
-  sensitive   = true # Hides value in terminal output
+  type      = string
+  sensitive = true
 }
 
 variable "pm_tls_insecure" {
@@ -18,7 +18,6 @@ variable "pm_tls_insecure" {
   default = true
 }
 
-# --- VM User Secrets ---
 variable "ci_user" {
   type    = string
   default = "admin_user"
@@ -31,5 +30,5 @@ variable "ci_password" {
 
 variable "ssh_key_file" {
   type        = string
-  description = "Path to the public SSH key on your local machine (e.g. ./my_key.pub)"
+  description = "Path to the public SSH key on local machine"
 }

@@ -2,7 +2,7 @@ terraform {
   required_providers {
     proxmox = {
       source  = "telmate/proxmox"
-      version = "3.0.1-rc6" # V3 Release Candidate
+      version = "3.0.1-rc6"
     }
   }
 }
@@ -28,9 +28,9 @@ module "vm" {
   template_name = "rhel9-base"
 
   # Cloud-Init & Secrets
-  ci_user        = var.ci_user
-  ci_password    = var.ci_password
-  
+  ci_user     = var.ci_user
+  ci_password = var.ci_password
+
   # Reads the key from the file path defined in variables
   ssh_public_key = file(var.ssh_key_file)
 

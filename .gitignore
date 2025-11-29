@@ -17,3 +17,5 @@ override.tf.json
 # Ignore SSH keys generated locally
 my_key
 my_key.pub
+
+inventory.ini

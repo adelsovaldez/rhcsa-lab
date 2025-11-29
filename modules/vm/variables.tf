@@ -1,7 +1,7 @@
 variable "vm_name" {}
 variable "vm_cpu" {}
 variable "vm_memory" {}
-variable "vm_disk_size" {} 
+variable "vm_disk_size" {}
 variable "vm_storage" {}
 variable "template_name" {}
 variable "ci_user" {}
