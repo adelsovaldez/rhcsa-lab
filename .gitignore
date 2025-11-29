@@ -18,4 +18,5 @@ override.tf.json
 my_key
 my_key.pub
 
+# Ansible Inventory (Local config)
 inventory.ini
