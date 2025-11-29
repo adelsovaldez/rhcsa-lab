@@ -121,3 +121,8 @@ This Terraform code relies on a template named `rhel9-base`. You must create thi
 ├── variables.tf        # Root variable definitions
 ├── terraform.tfvars    # (Excluded) Your secrets & local config
 └── README.md           # Documentation
+
+📝 Notes for RHCSA Study
+Scaling: To practice with multiple servers, change count = 1 to count = 3 in modules/vm/main.tf and run terraform apply.
+
+Networking: The default configuration sets the IP to 192.168.1.150. Ensure this IP is free on your network.
